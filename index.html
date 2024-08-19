@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <style>
+        .carousel-img {
+            height: 80vh;
+            object-fit: cover;
+            filter: blur(5px);
+        }
+
+        .margin-bottom-div {
+            margin-bottom: 25vh;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="">
+        <!-- carousel start -->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/slider-img/slider-32 (1).jpg" class="d-block w-100 carousel-img" alt="...">
+                    <div class="carousel-caption d-none d-md-block margin-bottom-div">
+                        <h5 class="display-2 text-info">Select Your Favourite Player</h5>
+                        <p class="fs-5 text-skye-50">There are a large variety of playable agents available in the game.
+                            Agents are divided into 4 roles: Duelists, Sentinels, Initiators, and Controllers. Each
+                            agent has a different role which indicates how the agent is usually played.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/slider-img/slider-32 (2).jpg" class="d-block w-100 carousel-img" alt="...">
+                    <div class="carousel-caption d-none d-md-block margin-bottom-div">
+                        <h5 class="display-2 text-info">Select Your Favourite Player</h5>
+                        <p class="fs-5 text-skye-50">In Valorant, the competitive ranking system consists of several
+                            ranks that players can achieve by winning games and earning Rank Rating (RR).To progress
+                            through these ranks, players must win games, perform well individually (such as getting
+                            kills, assists, and completing objectives), and consistently play at a high level.
+                            Conversely, losing games and performing poorly can cause players to lose rank. Each rank has
+                            three tiers (e.g., Gold 1, Gold 2, Gold 3), except for Radiant, which is a single tier rank.
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/slider-img/slider-32 (3).jpg" class="d-block w-100 carousel-img" alt="...">
+                    <div class="carousel-caption d-none d-md-block margin-bottom-div">
+                        <h5 class="display-2 text-info">Select Your Favourite Player</h5>
+                        <p class="fs-5 text-skye-50">As players progress through the Battle Pass tiers, they can unlock
+                            exclusive weapon skins. These skins are often themed around the season and can range from
+                            basic to more elaborate designs.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- carousel end -->
+    </header>
+
+
+    <main class="container text-center mt-5 mb-5">
+        <section>
+            <div class="row">
+                <div class="col-9">
+                    <div class="d-flex flex-wrap mb-2 justify-content-between gap-3" id="card-main-section">
+
+                        <div class="card m-1" style="width: 16rem;">
+                            <img src="img/Agent/fade.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title" id="fade">Fade</h5>
+                                <p class="card-text"> the bulk of the card's
+                                    content.</p>
+                                <button id="btn-fade" class="btn btn-primary mt-2" onclick=getBtnById(this)>Select</button>
+                            </div>
+                        </div>
+
+
+                        <div class="card m-1" style="width: 16rem;">
+                            <img src="img/Agent/Sage.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title" id="fade">Sage</h5>
+                                <p class="card-text">Some quick example text to build</p>
+                                <button id="btn-fade" class="btn btn-primary mt-2" onclick=getBtnById(this)>Select</button>
+                            </div>
+                        </div>
+
+
+                        <div class="card m-1" style="width: 16rem;">
+                            <img src="img/Agent/Phoenix.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title" id="fade">Phinex</h5>
+                                <p class="card-text">Some quick example text to build on the </p>
+                                <button id="btn-fade" class="btn btn-primary mt-2" onclick=getBtnById(this)>Select</button>
+                            </div>
+                        </div>
+
+
+                        <div class="card m-1" style="width: 16rem;">
+                            <img src="img/Agent/brim.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title" id="fade">Brim</h5>
+                                <p class="card-text">Some quick example text to build </p>
+                                <button id="btn-fade" class="btn btn-primary mt-2" onclick=getBtnById(this)>Select</button>
+                            </div>
+                        </div>
+
+
+                        <div class="card m-1" style="width: 16rem;">
+                            <img src="img/Agent/Breach.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title" id="fade">Breach</h5>
+                                <p class="card-text">Some quick example text to build on.</p>
+                                <button id="btn-fade" class="btn btn-primary mt-2" onclick=getBtnById(this)>Select</button>
+                            </div>
+                        </div>
+
+
+                        <div class="card m-1" style="width: 16rem;">
+                            <img src="img/Agent/killjoy.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title" id="fade">killjoy</h5>
+                                <p class="card-text">Some quick example text to build on</p>
+                                <button id="btn-fade" class="btn btn-primary mt-2" onclick=getBtnById(this)>Select</button>
+                            </div>
+                        </div>
+
+
+                        <div class="card m-1" style="width: 16rem;">
+                            <img src="img/Agent/gekko.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title" id="fade">gekko</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up
+                                    the bulk of the card's
+                                    content.</p>
+                                <button id="btn-fade" class="btn btn-primary mt-2" onclick=getBtnById(this)>Select</button>
+                            </div>
+                        </div>
+
+
+                        <div class="card m-1" style="width: 16rem;">
+                            <img src="img/Agent/rayna.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title" id="fade">Rayna</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up
+                                    the bulk of the card's
+                                    content.</p>
+                                <button id="btn-fade" class="btn btn-primary mt-2" onclick=getBtnById(this)>Select</button>
+                            </div>
+                        </div>
+
+
+                        <div class="card m-1" style="width: 16rem;">
+                            <img src="img/Agent/chamber.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title" id="fade">Chamber</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up
+                                    the bulk of the card's
+                                    content.</p>
+                                <button id="btn-fade" class="btn btn-primary mt-2" onclick=getBtnById(this)>Select</button>
+                            </div>
+                        </div>
+
+
+                        <div class="card m-1" style="width: 16rem;">
+                            <img src="img/Agent/jett.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title" id="fade">Jett</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up
+                                    the bulk of the card's
+                                    content.</p>
+                                <button id="btn-fade" class="btn btn-primary mt-2" onclick=getBtnById(this)>Select</button>
+                            </div>
+                        </div>
+
+
+                        <div class="card m-1" style="width: 16rem;">
+                            <img src="img/Agent/Chyper.jfif" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title" id="fade">Chyper</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up
+                                    the bulk of the card's
+                                    content.</p>
+                                <button id="btn-fade" class="btn btn-primary mt-2" onclick=getBtnById(this)>Select</button>
+                            </div>
+                        </div>
+
+
+                        <div class="card m-1" style="width: 16rem;">
+                            <img src="img/Agent/Skye.jfif" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title" id="fade">Skye</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up
+                                    the bulk of the card's
+                                    content.</p>
+                                <button id="btn-fade" class="btn btn-primary mt-2" onclick=getBtnById(this)>Select</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="d-flex flex-column mb-1">
+                        <div class="border border-dark pb-0 mb-5">
+                            <h1 class="fs-4 mt-3">Total Player Selected: <span id="total-player-count">0</span></h1>
+                            <table class="table table-dark table-hover mb-0">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">SL</th>
+                                        <th scope="col">Player Name</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-group-divider" id="player-display-table">
+                                    <!-- row 1 -->
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- calculator start -->
+                        <div class="border border-dark rounded">
+                            <h1>Budget</h1>
+                            <div class="input-group p-2 px-5">
+                                <span class="input-group-text">Per Player</span>
+                                <input type="number" aria-label="" class="form-control" id="per-player">
+                            </div>
+                            <button class="btn btn-outline-primary mt-3" type="button"
+                                id="btn-calculation">calculate</button>
+                            <div class="d-flex justify-content-around">
+                                <p class="text-center fw-bold mt-3 fs-5">Player Expenses : $ <span
+                                        id="player-expenses">00</span> </p>
+                            </div>
+                            <div class="input-group p-2 px-5 ">
+                                <span class="input-group-text">Manager</span>
+                                <input type="number" aria-label="" class="form-control" id="manager-salary">
+                            </div>
+                            <div class="input-group p-2 px-5">
+                                <span class="input-group-text">Coach</span>
+                                <input type="number" aria-label="" class="form-control" id="coach-salary">
+                            </div>
+                            <button class="btn btn-outline-primary mt-3" type="button" id="btn-total">Total
+                                Calculation</button>
+                            <div class="d-flex justify-content-around">
+                                <p class="text-center fw-bold mt-3 fs-5">Total Expenses :</p>
+                                <p class="text-center fw-bold mt-3 fs-5">$ <span id="total-expense">00</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+        <script src="js/budget.js"></script>
+        <script src="js/card.js"></script>
+        <script src="js/main.js"></script>
+        <!-- <script src="js/script.js"></script> -->
+</body>
+
+</html>
